@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Uplifting Quotes</title>
+
+    <script>
+        const QUOTEBANK = [
+          {
+            quote: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            author: " -Winston S. Churchill "
+          }, {
+            quote: "Try not to become a man of success. Rather become a man of value.",
+            author: " -Albert Einstein"
+          }, {
+            quote: "It is better to fail in originality than to succeed in imitation.",
+            author: " -Herman Melville"
+          }, {
+            quote: "Success is not how high you have climbed, but how you make a positive difference to the world.",
+            author: " -Roy T. Bennett"
+          }, {
+            quote: "So be sure when you step, Step with care and great tact. And remember that life's A Great Balancing Act. And will you succeed? Yes! You will, indeed! (98 and ¾ percent guaranteed) Kid, you'll move mountains.",
+            author: " -Dr. Seuss"
+          }, {
+            quote: "Have no fear of perfection - you'll never reach it.",
+            author: " -Salvador Dali"
+          }, {
+            quote: "Success is stumbling from failure to failure with no loss of enthusiasm.",
+            author: " -Winston S. Churchill"
+          }, {
+            quote: "I'm a success today because I had a friend who believed in me and I didn't have the heart to let him down.",
+            author: " -Abraham Lincoln"
+          }, {
+            quote: "The way to get started is to quit talking and begin doing.",
+            author: " -Walt Disney"
+          }, {
+            quote: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+            author: " -Albert Einstein"
+          }, {
+            quote: "For every minute you are angry you lose sixty seconds of happiness.",
+            author: " -Ralph Waldo Emerson "
+          }, {
+            quote: "Happiness is not something ready made. It comes from your own actions.",
+            author: " -Dalai Lama XIV "
+          }, {
+            quote: "Count your age by friends, not years. Count your life by smiles, not tears.",
+            author: " -John Lennon"
+          }, {
+            quote: "Believe in yourself. You are braver than you think, more talented than you know, and capable of more than you imagine.",
+            author: " -Roy T. Bennett"
+          }, {
+            quote: "Be brave to stand for what you believe in even if you stand alone.",
+            author: " -Roy T. Bennett"
+          }, {
+            quote: "The man who moves a mountain begins by carrying away small stones.",
+            author: " -Confucius"
+          }, {
+            quote: "Although the world is full of suffering, it is full also of the overcoming of it.",
+            author: " -Helen Keller"
+          }, {
+            quote: "Great leaders create more leaders, not followers.",
+            author: " -Roy T. Bennett"
+          }, {
+            quote: "It had long since come to my attention that people of accomplishment rarely sat back and let things happen to them. They went out and happened to things.",
+            author: " -Leonardo da Vinci "
+          }, {
+            quote: "Only those who dare to fail greatly can ever achieve greatly.",
+            author: " -Robert F. Kennedy "
+          }, {
+            quote: "Always bear in mind that your own resolution to succeed is more important than any one thing.",
+            author: " -Abraham Lincoln"
+          }, {
+            quote: "I've come to believe that each of us has a personal calling that's as unique as a fingerprint - and that the best way to succeed is to discover what you love and then find a way to offer it to others in the form of service, working hard, and also allowing the energy of the universe to lead you. ",
+            author: " -Oprah Winfrey"
+          }, {
+            quote: "The three great essentials to achieve anything worthwhile are, first, hard work; second, stick-to-itiveness; third, common sense.",
+            author: " -Thomas A. Edison"
+          }, {
+            quote: "If I cannot do great things, I can do small things in a great way",
+            author: " -Martin Luther King Jr."
+          }, {
+            quote: "If you care about what you do and work hard at it, there isn't anything you can't do if you want to.",
+            author: " -Jim Henson"
+          }, {
+            quote: "Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin.",
+            author: " -Mother Theresa"
+          }, {
+            quote: "Time is an illusion.",
+            author: " -Albert Einstein "
+          }, {
+            quote: "It is by no means an irrational fancy that, in a future existence, we shall look upon what we think our present existence, as a dream.",
+            author: " -Edgar Allan Poe"
+          }, {
+            quote: "Fortune sides with him who dares.",
+            author: " -Virgil "
+          }, {
+            quote: "I want to do it because I want to do it. Women must try to do things as men have tried. When they fail, their failure must be but a challenge to others.",
+            author: " -Amelia Earhart "
+          }, {
+            quote: "The test of success is not what you do when you are on top. Success is how high you bounce when you hit the bottom.",
+            author: " -George S. Patton Jr."
+          }, {
+            quote: "Vision without execution is just hallucination.",
+            author: " -Henry Ford"
+          }, {
+            quote: "The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe.",
+            author: " -Bob Ross"
+          }, {
+            quote: "Be the change that you wish to see in the world.",
+            author: " -Mahatma Gandhi"
+          }, {
+            quote: "How wonderful it is that nobody need wait a single moment before starting to improve the world.",
+            author: " -Anne Frank"
+          }, {
+            quote: "One, remember to look up at the stars and not down at your feet. Two, never give up work. Work gives you meaning and purpose and life is empty without it. Three, if you are lucky enough to find love, remember it is there and don't throw it away.",
+            author: " -Stephen Hawking"
+          }, {
+            quote: "Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!",
+            author: " -Dr. Seuss"
+          }, {
+            quote: "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.",
+            author: " -J.K. Rowling"
+          }, {
+            quote: "Be kind, for everyone you meet is fighting a hard battle.",
+            author: " -Socrates"
+          }, {
+            quote: "Do what you feel in your heart to be right – for you’ll be criticized anyway.",
+            author: " -Eleanor Roosevelt"
+          }, {
+            quote: "Whatever you are, be a good one.",
+            author: " -Abraham Lincoln"
+          }, {
+            quote: "Once you have tasted flight, you will forever walk the earth with your eyes turned skyward, for there you have been, and there you will always long to return.",
+            author: " -Leonardo da Vinci"
+          }, {
+            quote: "You see things; you say, 'Why?' But I dream things that never were; and I say 'Why not?",
+            author: " -George Bernard Shaw"
+          }, {
+            quote: "Kindness is a language which the deaf can hear and the blind can see.",
+            author: " -Mark Twain"
+          }, {
+            quote: "I'd rather be hated for who I am, than loved for who I am not.",
+            author: " -Kurt Cobain"
+          }, {
+            quote: "Keep your face always toward the sunshine - and shadows will fall behind you.",
+            author: " -Walt Whitman"
+          }, {
+            quote: "Courage isn't having the strength to go on - it is going on when you don't have strength.",
+            author: " -Napoleon Bonaparte"
+          }, {
+            quote: "The backbone of success is...hard work, determination, good planning, and perserverence.",
+            author: " -Mia Hamm"
+          }, {
+            quote: "It is not enough to be busy; so are the ants. The question is: What are we busy about?",
+            author: " -Henry David Thoreau"
+          }, {
+            quote: "Success is the best revenge.",
+            author: " -Kanye West"
+          }, {
+            quote: "Constantly seek criticism. A well thought out critique of what you're doing is as valuable as gold",
+            author: " -Elon Musk"
+          }, {
+            quote: "Leadership is not only having a vision, but also having the courage, the discipline, and the resources to get you there.",
+            author: " -George Washington"
+          }, {
+            quote: "You measure the size of the accomplishment by the obstacles you have to overcome to reach your goals.",
+            author: " -Booker T. Washington"
+          }, {
+            quote: "Work hard in silence let your success be the noise",
+            author: " -Simone Biles"
+          }, {
+            quote: "Good, better, best. Never let it rest. 'Til your good is better and your better is best.",
+            author: " -St. Jerome"
+          }, {
+            quote: "The key is to keep company only with people who uplift you, whose presence calls forth your best.",
+            author: " -Epictetus"
+          }, {
+            quote: "I am not afraid... I was born to do this.",
+            author: " -Joan of Arc"
+          }, {
+            quote: "Opportunity does not knock, it presents itself when you beat down the door.",
+            author: " -Kyle Chandler"
+          }, {
+            quote: "I've worked too hard and too long to let anything stand in the way of my goals. I will not let my teammates down and I will not let myself down.",
+            author: " -Mia Hamm"
+          }, {
+            quote: "Without continual growth and progress, such words as improvement, achievement, and success have no meaning.",
+            author: " -Benjamin Franklin"
+          }, {
+            quote: "My attitude is that if you push me towards something that you think is a weakness, then I will turn that perceived weakness into a strength.",
+            author: " -Michael Jordan"
+          }, {
+            quote: "Your attitude, not your aptitude, will determine your altitude.",
+            author: " -Zig Ziglar"
+          }, {
+            quote: "A positive attitude causes a chain reaction of positive thoughts, events and outcomes. It is a catalyst and it sparks extraordinary results.",
+            author: " -Wade Boggs"
+          },
+        ];
+
+      window.onload = init;
+      function init() {
+        generateQuote()
+      }
+
+      function generateQuote() {
+        let quoteSize = QUOTEBANK.length;
+        let randomIndex = Math.floor(Math.random() * quoteSize);
+        let randomQuoteData = QUOTEBANK[randomIndex];
+
+        document.getElementById('text').innerText = randomQuoteData.quote;
+        document.getElementById('author').innerText = randomQuoteData.author;
+      }
+
+    </script>
+
+    <style>
+
+    </style>
+  </head>
+
+    <body>
+      <div class="container" >
+        <div class="row py-5">
+          <div class="col-md-8 offset-md-2"
+          <wrapper id="quote-box">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div id="text"></div>
+                </h5>
+              <p class="card-text ">
+                <div id="author" class="text-center"></div>
+              </p>
+              <button id="new-quote" onClick="generateQuote();" class="btn btn-info btn-block"  >New Quote</button>
+            </div>
+          </div>
+        </wrapper>
+      </div>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+    <footer class="text-center"> Created by: J. Norton</footer>
+</html>
